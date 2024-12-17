@@ -1,0 +1,1 @@
+C:\Users\Konopacki\Desktop\Reversi\Reversi.csproj;x64

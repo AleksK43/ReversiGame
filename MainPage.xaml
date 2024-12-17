@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Reversi.MainPage"
+             BackgroundColor="Black">
+
+    <Grid>
+        <!-- Container dla efektu matrix -->
+        <Grid x:Name="MainContainerGrid" 
+              ColumnSpacing="0"
+              RowSpacing="0">
+        </Grid>
+
+        <!-- Container dla tytułu -->
+        <HorizontalStackLayout x:Name="TitleContainer"
+                              HorizontalOptions="Center"
+                              VerticalOptions="Center"
+                              Spacing="10"
+                              ZIndex="1">
+        </HorizontalStackLayout>
+
+        <!-- Menu -->
+        <StackLayout x:Name="MenuStackLayout"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                     Spacing="20"
+                     ZIndex="2"
+                     IsVisible="False">
+
+            <Button Text="Graj z komputerem"
+                    BackgroundColor="DarkGreen"
+                    TextColor="White"
+                    WidthRequest="200"
+                    HeightRequest="50"
+                    Clicked="OnPlayVsComputer"/>
+
+            <Button Text="Gra 2 osobowa"
+                    BackgroundColor="DarkGreen"
+                    TextColor="White"
+                    WidthRequest="200"
+                    HeightRequest="50"
+                    Clicked="OnPlayVsPlayer"/>
+
+
+            <Button Text="Wyjście"
+                    BackgroundColor="DarkRed"
+                    TextColor="White"
+                    WidthRequest="200"
+                    HeightRequest="50"
+                    Clicked="OnExit"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

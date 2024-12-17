@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Reversi.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Reversi"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Reversi">
+
+    <ShellContent
+        Title="Reversi"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+        Title="Two Player Game"
+        ContentTemplate="{DataTemplate local:TwoPlayerGamePage}"
+        Route="twoPlayerGame" />
+
+    <ShellContent
+        Title="Computer Game"
+        ContentTemplate="{DataTemplate local:ComputerGamePage}"
+        Route="computerGame" />
+
+</Shell>
